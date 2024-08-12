@@ -1,0 +1,36 @@
+.outer-container {
+  display: flex;
+  min-height:100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-size: 100%;
+  padding: 0 2.4rem;
+  
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+
+}
+.bg-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 156px;
+  width: 100%;
+  z-index: 2;
+  background-image: url("./assets/images/bg-header-desktop.svg");
+  background-color: var(--Desaturated-Dark-Cyan);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+

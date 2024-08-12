@@ -1,0 +1,78 @@
+.bar-wrapper {
+  margin-top: 11.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  padding: 0 2.4rem;
+}
+
+.bar-container {
+  max-width: 1110px;
+  width: 100%;
+  min-height: 72px;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -1rem rgba(0, 0, 0, 0.1);
+}
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+
+}
+.remove-tag-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #eff6f6;
+  border-radius: 0.5rem;
+}
+.tag-name {
+  color: var(--Desaturated-Dark-Cyan);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+.btn {
+  border: none;
+  background: none;
+}
+.btn.remove-btn {
+  background-color: var(--Desaturated-Dark-Cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.clear-btn {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: var(--Desaturated-Dark-Cyan);
+  width: fit-content;
+  position: relative;
+}
+/* ACTIVE STATES */
+.btn.remove-btn:hover {
+  background-color: var(--Very-Dark-Grayish-Cyan);
+}
+.clear-btn::before {
+  position: absolute;
+  bottom: -2px;
+  background-color: var(--Desaturated-Dark-Cyan);
+  width: 100%;
+  height: 2px;
+  transform: scale(0);
+  content: "";
+}
+.clear-btn:hover:before {
+  transform: scale(1);
+  transition: 0.3s ease;
+}

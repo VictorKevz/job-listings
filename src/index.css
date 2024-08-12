@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+  
+  --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  width: 100%;
+  background-color: var(--Light-Grayish-Cyan-Background);
+  color: var(--Dark-Grayish-Cyan);
+
+}
+input,button{
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+li{
+  list-style-type: none;
+  cursor: pointer;
+}
+li,p{
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: .3s ease-in-out;
+
+}
+fieldset{
+  border: none;
+  
+}
+
+/* ----------RESPONSIVENESS FOR THE WHOLE APP---------------- */
+
+@media (width <= 970px) {
+  .card-container{
+    gap: 4rem;
+    max-width: 550px;
+  }
+  .card,.logo-text-container{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .card{
+    padding: 2.4rem;
+  }
+.logo-text-container{
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #BDC0BF;
+}
+ .logo-wrapper{
+margin-top: -4.9rem;
+ }
+ .text-container{
+  gap: 1rem;
+  
+ } 
+ .tag-container{
+margin-top: 1.8rem;
+ }
+ 
+}
+@media (width <=600px) {
+  .bg-header{
+    background-image: url("./assets/images/bg-header-mobile.svg");
+  }
+  
+}
