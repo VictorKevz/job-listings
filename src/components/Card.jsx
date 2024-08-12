@@ -25,10 +25,10 @@ function Card({ selectedTags, setSelectedTags }) {
           <AnimatePresence key={obj.id}>
             <motion.div
               className={`card ${[1, 2].includes(obj.id) && "left-border"}`}
-              // variants={bounceIn}
-              // initial="hidden"
-              // animate="visible"
-              // custom={obj.id} 
+              variants={bounceIn}
+              initial="hidden"
+              animate="visible"
+              custom={obj.id} 
             >
               <div className="logo-text-container">
                 <div className={`logo-wrapper ${checkClassName(obj.id)}`}>

@@ -22,9 +22,9 @@ function FilterBar({ selectedTags, setSelectedTags }) {
       <AnimatePresence mode="wait">
       <motion.div 
       className="bar-container"
-      // variants={entry}
-      //   initial="hidden"
-      //   animate="visible"
+      variants={entry}
+        initial="hidden"
+        animate="visible"
       >
         <div className="tags">
           {selectedTags.map((tag, i) => (

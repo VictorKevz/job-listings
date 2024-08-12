@@ -17,9 +17,9 @@ function App() {
       >
         <motion.div 
         className="bg-header"
-        // variants={entry}
-        // initial="hidden"
-        // animate="visible"
+        variants={entry}
+        initial="hidden"
+        animate="visible"
         >
 
         </motion.div>
